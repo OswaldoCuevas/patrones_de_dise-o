@@ -20,7 +20,7 @@ class ErrorMessages {
         }
 
         // Enviar la respuesta como JSON
-        echo json_encode(['error' => $mensaje]);
+        return ['error' => $mensaje];
     }
 }
 ?>

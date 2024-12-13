@@ -1,8 +1,8 @@
 <?php
 require_once 'interfaces/IRoutes.php';
-require_once 'utils/FactoryControllers.php';
-require_once 'utils/ErrorMessages.php';
-class FactoryRoutes {
+require_once 'libs/FactoryControllers.php';
+require_once 'libs/ErrorMessages.php';
+class FactoryRoutesApiRest {
     public static function init() {
         $route = !empty( $_GET['url'] ) ? $_GET['url'] :'';
         $route = explode('/', $route);
